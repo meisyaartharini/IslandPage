@@ -14,7 +14,8 @@ body{
     background-attachment: fixed;
     /* min-width: 100vh; */
     /* height: 100%; */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    /* overflow: hidden; */
 }
 
 nav {
@@ -135,7 +136,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
+    height: 100vh;
     /* background: url('img/intro_pulau.png') no-repeat;
     background-size: cover;
     background-position: center;
@@ -190,7 +191,13 @@ section {
     background: #020912;
     padding: 30px;
     height: 100%; /* Ubah nilai height sesuai kebutuhan */
+    overflow: hidden;
 }
+.parallax,
+.sec {
+  height: auto;
+}
+
 
 .sec h2 {
     font-size: 3em;
@@ -203,6 +210,28 @@ section {
     color: #fff;
     font-weight: 300;
     text-align: justify;
+}
+
+/* Atur tata letak konten pada layar kecil */
+@media (max-width: 768px) {
+  .parallax h2 {
+    font-size: 4em;
+  }
+
+  .sec h2 {
+    font-size: 2em;
+  }
+}
+
+/* Atur tata letak konten pada layar sangat kecil */
+@media (max-width: 576px) {
+  .parallax h2 {
+    font-size: 3em;
+  }
+
+  .sec h2 {
+    font-size: 1.5em;
+  }
 }
 
 

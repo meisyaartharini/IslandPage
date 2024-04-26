@@ -6,6 +6,7 @@
     <title>Responsive Navbar | CodingNepal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reg..css">
+    <script src="./register.js" defer></script>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> -->
   </head>
   <body>
@@ -31,5 +32,58 @@
       </ul>
     </nav>
     <section></section>
+
+    <div class="bg">
+    <div class="container">
+      <h2>Register</h2>
+      <form id="register-form">
+        <label class="title" for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Input Username">
+        
+        <label class="title" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Input Email">
+        
+        <label class="title" for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Input Password">
+        
+        <label class="title" for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" placeholder="Input Confirm Password">
+        
+        <label class="title" for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+  
+        <label class="title" for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+  
+        <label class="title">Subscription Plan:</label>
+        <div>
+          <div>
+            <input type="radio" name="plan" id="free" value="free">
+            <label for="free">Free Tier (Free)</label>
+          </div>
+          <div>
+            <input type="radio" name="plan" id="premium" value="premium">
+            <label for="premium">Premium Tier (10$/month)</label>
+          </div>
+        </div>
+        
+        <label class="title">Agree to Terms:</label>
+        <div>
+          <label for="agree_terms">I agree to the terms and conditions</label>
+          <input type="checkbox" id="agree_terms" name="agree_terms">
+        </div>
+
+        <div class="error">
+          <label id="error-txt"></label>
+        </div>
+        
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </div>
   </body>
 </html>

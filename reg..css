@@ -98,6 +98,7 @@ a:hover {
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
+    z-index: 4;
 
   }
 
@@ -126,4 +127,73 @@ section {
   background: url(bg1.jpg) no-repeat;
   background-size: cover;
   height: calc(100vh - 80px);
+}
+
+.container {    
+  width: 400px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.344);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(30px);
+  margin-top: -700px;
+  z-index: -1;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+label.title {
+  font-weight: bold;
+}
+
+.error {
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: red;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+  padding: 10px;
+  border: 1px solid #580a0a;
+  border-radius: 15px;
+  background-color: #3333338f;
+  /* color: white; */
+}
+
+select:hover{
+  background-color: #3333338f;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+  height: 100%;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #333;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
 }
